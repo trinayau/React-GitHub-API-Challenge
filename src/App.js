@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Footer, NavBar } from './components';
+import { Footer, NavBar, UserHeader } from './components';
 import * as Pages from './pages';
 
 
@@ -11,6 +11,7 @@ function App() {
     return (
         <div id="app">
             <NavBar />
+            <UserHeader/>
             <main>
                 <Routes>
                     <Route path="/" element={<Pages.HomePage />} />

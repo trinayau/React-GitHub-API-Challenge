@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+}
+#userHeader {
+    background-color: lightgray;
+    padding: 30px;
+    margin: 10px 0px;
+}
