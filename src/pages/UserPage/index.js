@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { UserHeader } from '../../components';
 import { useParams, useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 
 const UserPage = () => {
+
+    const navigate = useNavigate()
     const {username} = useParams();
+
     useEffect(()=>{
         searchRepos()
     },[username]);
@@ -38,8 +41,13 @@ const UserPage = () => {
         });
     }
 
+    function navigateRepo(i){
+        navigate(`/user/${username}/${i}`)
+
+    }
+
     function renderRepos(){
-        return repos.map((r,i) => <li className="repo-link" key={i} onClick={() => {console.log(`repo ${i} clicked`)}}>{r.name}</li>)
+        return repos.map((r,i) => <li className="repo-link" key={i}><Link to={`/user/${username}/${r.name}`}>{r.name}</Link></li>)
     }
     return <>
     <UserHeader name={username} img={user.avatar_url} repoNum={user.public_repos}/>

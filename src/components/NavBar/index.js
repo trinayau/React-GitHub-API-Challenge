@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {SearchBar} from '../index'
 import './style.css';
 
@@ -8,7 +8,7 @@ const NavBar = () => {
     let navigate = useNavigate(); 
 
     return (<div className='navbar'>
-        <div><img src="assets/images/logo.png" style={{height: "60px"}}></img></div>
+        <div><Link to="/"><img src="../assets/images/logo.png" style={{height: "60px"}}></img></Link></div>
         <div>
         <SearchBar/>
         </div>
