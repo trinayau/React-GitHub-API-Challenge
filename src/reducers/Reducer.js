@@ -2,7 +2,7 @@ const initState = {
     
 };
 
-const searchReducer = (state=initState, action) => {
+const Reducer = (state=initState, action) => {
     switch(action.type){
         
         default: 
