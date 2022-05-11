@@ -7,12 +7,13 @@ const NavBar = () => {
 
     let navigate = useNavigate(); 
 
-    return (
-
+    return (<>
+        <h1>header</h1>
 
         <nav>
             <button onClick={() => navigate(-1) }>Back</button>
         </nav>
+        </>
     );
 }
 
