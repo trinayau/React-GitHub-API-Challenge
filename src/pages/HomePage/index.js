@@ -1,13 +1,11 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import {NavBar} from '../../components'
 
 
 
 const HomePage = () => {
-
-
-
-    return <h1>hi</h1>;
+    return <>
+    </>
 }
 
 export default HomePage;
