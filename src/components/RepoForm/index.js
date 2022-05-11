@@ -3,10 +3,19 @@ import React from 'react';
 
 
 
-const RepoForms = () => {
+const RepoForms = () => { 
 
 
-    return <h1> form </h1>
+    
+
+    return <> <h1> form </h1>
+
+    <form aria-label="form" onSubmit={handleSubmit}>
+        <input aria-label="UserName" type="text" onChange={updateInput} value={location} />
+        <input type="submit" value="Search" />
+    </form>
+    </>
+
 }
 
 export default RepoForms;

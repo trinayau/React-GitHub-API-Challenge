@@ -1,7 +1,9 @@
-*{
+* {
     margin: 0;
 }
+
 #userHeader {
     background-color: lightgray;
     padding: 30px;
+    text-align: center;
 }
