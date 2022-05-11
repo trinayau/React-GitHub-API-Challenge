@@ -3,11 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Footer, NavBar, UserHeader } from './components';
 import * as Pages from './pages';
 
-
 function App() {
-
-
-
     return (
         <div id="app">
             <NavBar />
