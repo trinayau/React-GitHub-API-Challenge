@@ -4,7 +4,7 @@ import React from 'react';
 import './style.css';
 
 const Footer = () => {
-    return <h1>Footer</h1>
+    return <p className='footer'>🧀 Open Source Project by Scralfie and Trina 🧀</p>
 }
 
 export default Footer;

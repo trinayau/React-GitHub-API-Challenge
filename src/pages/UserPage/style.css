@@ -1,0 +1,33 @@
+/* user page styling*/
+
+.user img {
+    border-radius: 13px;
+    height: 150px;
+}
+
+.user a{
+    text-decoration: none;
+    color: gray;
+
+}
+
+/* repos */
+
+.repository-container {
+    padding: 30px;
+}
+
+.repo-style {
+    border-radius: 9px;
+    margin-top: 15px;
+    border: 1px solid #CFD7DE;
+}
+.repo-link {
+    padding: 30px 50px 30px 50px;
+    border-bottom: 1px solid #CFD7DE;
+  
+}
+
+.repo-link a:hover {
+    color: darkgray;
+}

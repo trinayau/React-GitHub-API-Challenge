@@ -1,0 +1,65 @@
+.owner img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.single-repo {
+    display:flex;
+}
+
+.repo-details {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F5F8FA;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.heading{
+    font-size: 20px;
+    color: #000;
+}
+
+.heading:hover{
+    color: darkgrey;
+}
+
+.repo-details a{
+    color: #000
+}
+
+/* Topics */
+.topics{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-right: 5px;
+}
+
+.topic-class {
+    background-color: lightgray;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .single-repo{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

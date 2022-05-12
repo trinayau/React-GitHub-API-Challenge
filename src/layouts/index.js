@@ -6,7 +6,6 @@ import { Footer, NavBar } from '../components';
 const Layout = () => {
     return <>
         <NavBar />
-        <UserHeader />
         <Outlet />
         <Footer />
 
