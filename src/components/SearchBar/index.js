@@ -19,6 +19,7 @@ function SearchBar (){
     function handleSubmit(e) {
         e.preventDefault();
         navigate(`/user/${username}`)
+        setUsername('');
     }
   
     return (
