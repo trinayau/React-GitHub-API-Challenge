@@ -11,36 +11,15 @@ function SearchBar (){
     const [username, setUsername] = useState('');
     const [isPending, setIsPending] = useState(false);
     const [repos, setRepos] = useState([]);
-    const [details, setDetails] = useState({});
     const [loadingDetails, setLoadingDetails] = useState(false);
 
     const navigate = useNavigate();
 
-    useEffect(() => {
-        setRepos([]);
-        setDetails({});
-
-    }, [username]);
 
     function handleSubmit(e) {
         e.preventDefault();
-        searchRepos();
+        navigate(`/user/${username}`)
     }
-
-    function searchRepos() {
-        setIsPending(true);
-        axios({
-            method: 'GET',
-            url: `https://api.github.com/users/${username}`,
-        }).then(res => {
-            setIsPending(false);
-            //setRepos will show the data fetched
-            setRepos(res.data);
-            navigate(`/user/${username}`)
-
-        });
-    }
-
   
     return (
         <>

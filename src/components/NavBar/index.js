@@ -14,7 +14,7 @@ const NavBar = () => {
         <SearchBar/>
         </div>
         <nav>
-            <button onClick={() => navigate(-1) }>Back</button>
+            <button className='back' onClick={() => navigate(-1) }>Back</button>
         </nav>
         </div>
     );

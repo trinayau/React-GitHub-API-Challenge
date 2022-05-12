@@ -3,3 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
+.footer a{
+    color: #000;
+}
+
+
+.footer a:hover{
+    color: grey;
+}

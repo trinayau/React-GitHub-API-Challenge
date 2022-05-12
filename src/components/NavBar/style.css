@@ -12,3 +12,7 @@
 .navbar h1{
     color: #F5F8FA;
 }
+
+.navbar .back{
+    padding: 5px 10px
+}
