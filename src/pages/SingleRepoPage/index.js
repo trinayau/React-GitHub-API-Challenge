@@ -26,17 +26,16 @@ const HomePage = () => {
     return (
     <>
     <div className="single-repo">
-    <div className='owner'>
-        <img src={`${repository.owner.avatar_url}`}></img>
-        <h2>Repo Owner: {repository.owner.login}</h2>
-    </div>
     <div className='repo-details'>
-        <h1>{repository.name}</h1>
+        <a className="heading" href={repository.html_url}>{repository.full_name}</a>
         <p>Description: {repository.description}</p>
+        <p>Homepage: <a href={repository.homepage} target="_blank">{repository.homepage}</a></p>
         <p>Issues: {repository.open_issues}</p>
         <p>Forks: {repository.forks}</p>
+        <p>Language: {repository.language}</p>
         <div className='topics'>
-        <p>Topics:</p> {topics?.map((topic, i) => {return (<p className="topic-class" key={i}>{topic}</p>)})}
+        <p>Topics:</p> {topics !== [] ? topics?.map((topic, i) => {return (<p className="topic-class" key={i}>{topic}</p>)}) : <p>0</p>}
+
         </div>
     </div>
        
