@@ -4,7 +4,7 @@ import { UserHeader } from '../../components';
 import { useParams, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-
+import './style.css'
 const UserPage = () => {
 
     const navigate = useNavigate()
@@ -24,9 +24,7 @@ const UserPage = () => {
         }).then(res => {
             //setRepos will show the data fetched
             setRepos(res.data);
-            console.log(res.data);
         });
-
     },[username])
 
     function searchRepos() {
@@ -37,7 +35,6 @@ const UserPage = () => {
         }).then(res => {
             //setRepos will show the data fetched
             setUser(res.data);
-
         });
     }
 
@@ -47,13 +44,15 @@ const UserPage = () => {
     }
 
     function renderRepos(){
-        return repos.map((r,i) => <li className="repo-link" key={i}><Link to={`/user/${username}/${r.name}`}>{r.name}</Link></li>)
+        return repos.map((r,i) => <div className="repo-link" key={i}><Link to={`/user/${username}/${r.name}`}>{r.name}</Link><br/>{r.description?r.description:'No description'}</div>)
     }
-    return <>
+    return <div className='user'>
     <UserHeader name={username} img={user.avatar_url} repoNum={user.public_repos}/>
-    <h1>Repos</h1>
-    <ol>{renderRepos()}</ol>
-    </>;
+    <div className='repository-container'>
+    <h1>Repositories</h1>
+   <div className='repo-style'>{renderRepos()}</div>
+   </div>
+    </div>;
 }
 
 export default UserPage;

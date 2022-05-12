@@ -36,7 +36,6 @@ function SearchBar (){
             setIsPending(false);
             //setRepos will show the data fetched
             setRepos(res.data);
-            console.log(res.data)
             navigate(`/user/${username}`)
 
         });

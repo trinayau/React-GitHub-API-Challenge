@@ -8,7 +8,7 @@ const NavBar = () => {
     let navigate = useNavigate(); 
 
     return (<div className='navbar'>
-        <div><Link to="/"><img src="../assets/images/logo.png" style={{height: "60px"}}></img></Link></div>
+        <div><Link to="/"><img src="../../assets/images/logo.png" style={{height: "60px"}}></img></Link></div>
         <div>
         <SearchBar/>
         </div>
