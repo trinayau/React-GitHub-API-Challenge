@@ -5,9 +5,7 @@ import darth from './darth.jpg'
 
 const NotFoundPage = () => {
 
-    return <div className="notfound-container">
-
-
+    return <div className="notfound-container" style={{backgroundImage: `url(${darth})`}}>
     <div className="darth">
         <h1>404 Page not found!</h1>
         <p>I am not your father, please go back home.</p>
